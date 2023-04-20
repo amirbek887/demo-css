@@ -43,6 +43,10 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+*:focus {
+  outline: 2px dashed var(--outline-color);
+  outline-offset: 3px;
+}
 /* CONTAINER */
 .container {
   max-width: 1240px;
