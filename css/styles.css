@@ -47,6 +47,17 @@ a {
   outline: 2px dashed var(--outline-color);
   outline-offset: 3px;
 }
+/* VISUALLY HIDDEN */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* CONTAINER */
 .container {
   max-width: 1240px;
