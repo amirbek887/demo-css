@@ -1,3 +1,28 @@
+/* AUTOFILL */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-color: transparent;
+  -webkit-text-fill-color: inherit;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* PLACEHOLDER COLOR */
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
+  color: rgba(52, 49, 61, 0.5);
+  opacity: 1;
+}
+
 /* CUSTOM PROPS */
 :root {
   --body-bg: #fafafa;
@@ -5,7 +30,6 @@
   --text-color: #111517;
   --transition-duration: 0.4s;
   --placeholder-color: var(--text-color);
-
 }
 
 /* GLOBAL */
@@ -19,6 +43,7 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -31,18 +56,22 @@ body {
   color: var(--text-color);
   background-color: var(--body-bg);
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 a {
   text-decoration: none;
   cursor: pointer;
 }
+
 *:focus {
   outline: 2px dashed var(--outline-color);
   outline-offset: 3px;
 }
+
 /* VISUALLY HIDDEN */
 .visually-hidden {
   position: absolute;
@@ -54,6 +83,7 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /* CONTAINER */
 .container {
   max-width: 1240px;
@@ -67,4 +97,15 @@ a {
 /* MAIN */
 .main-content {
   flex-grow: 1;
+}
+
+
+/* RETINA BGS */
+@media
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                -o-min-device-pixel-ratio: 2/1),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
 }
