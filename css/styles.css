@@ -7,9 +7,7 @@
   --placeholder-color: var(--text-color);
 
 }
-::placeholder {
-  color: var(--placeholder-color);
-}
+
 /* GLOBAL */
 html {
   height: 100%;
@@ -32,8 +30,6 @@ body {
   line-height: normal;
   color: var(--text-color);
   background-color: var(--body-bg);
-  transition: background-color var(--transition-duration) ease,
-  color var(--transition-duration) ease;
 }
 img {
   max-width: 100%;
@@ -67,24 +63,8 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-/* DARK MODE */
-.dark-mode {
-  --body-bg: #202c36;
-  --element-bg: #2b3844;
-  --text-color: #fff;
-  --placeholder-color: var(--text-color);
-}
+
 /* MAIN */
 .main-content {
   flex-grow: 1;
-}
-
-/* RETINA BGS */
-@media
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                -o-min-device-pixel-ratio: 2/1),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-
 }
